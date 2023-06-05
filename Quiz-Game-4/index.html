@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Quiz</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@1,200;1,300;1,400;1,600;1,800&display=swap');
+      </style>
+    
+    <script defer src="./scripts/script.js"></script>
+</head>
+<header>
+    <h2 class="time" style="display: none">Countdown</h2>
+</header>
+<body>
+    <main class="card" id="intro">
+        <h1>Guess the Fact</h1>
+            <p>Quiz to see if you like animated movies.</p>
+            <button id="start-quiz">Begin</button>
+    </main>
+    <section id="questions" style="display: none">
+        <h3 id="currentQuestion"></h3>
+        <div id="answer"></div>
+
+        </section>
+
+        <section id="score" style="display: none">
+            <h2>Score is <span id= "finalScore"></span>!</h2>
+            <p>Name of contestant</p>
+            <form id="submit">
+                <label for= "playerName">Participant Name:</label>
+                <input type="text" id="playerName" name="playerName" value="">
+                <input type="submit" value="Submit"></form>
+        </section>
+        <div id="feedback" class="hide"></div>
+
+</body>
+</html>
